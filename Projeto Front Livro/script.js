@@ -4,7 +4,7 @@ const formPesquisa = document.querySelector("form");
 formPesquisa.onsubmit = (ev) => {
     ev.preventDefault();
 
-    const pesquisa = ev.target.pesquisa.value;
+    const pesquisa = ev.target.pesquisaTexto.value;
 
     if(pesquisa == ""){
         alert('preencha o campo!');

@@ -1,44 +1,99 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
     margin:0;
     padding: 0;
-    font-family: "Fira Sans", sans-serif;
+    font-family: "Bodoni Moda", sans-serif;
 }
 
 body{
-    background-color: white;
+    background-image: url(https://s2.glbimg.com/nIqfLY3zjr8JntK_zMS9QxXFaZk=/e.glbimg.com/og/ed/f/original/2020/09/05/alfons-morales-ylswjsy7stw-unsplash.jpg);
 }
 
-.pesquisa{
+h1.titulo {
+    background-color: #E4C59E;
+    color: #803D3B;
+    font-family: "Bodoni Moda", sans-serif;
     display: flex;
-    align-items: center;
-    border: 1px solid #ccc;
-    background-color: gray;
-    width: 400px;
-    margin: 20px auto;
-    border-radius: 20px;
-    padding: 5px 10px;
-    color: blue;
-}
-#pesquisaInput{
-    padding: 8px;
-    border: none;
-    background-color: transparent;
-    width: 100%;
-    outline: none;
-}
-
-.pesquisa label{
-    height: 20px;
-}
-
-.card-container{
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
-.card{
-    width: 300px;
+.caixaPesquisa{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #E4C59E;
+    height: 40px;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#pesquisaTexto{
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: #322C2B;
+    font-size: 16px;
+    line-height: 40px;
+    font-size: 16px;
+    line-height: 40px;
+    width: 0;
+    transition: .5s;
+    font-family: "Bodoni Moda";
+}
+.botao{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+div.lista{
+    margin-top: 10px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: center;
+    
+}
+
+div.item{
+    text-align: center;
+    padding: 10px;
+    width: 200px;
+    border: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    font-family: "Bodoni Moda", sans-serif;
+    color: white;
+    background-color: #AF8260;
+}
+
+div.item:hover{
+    background-color: #322C2B;
+}
+
+
+.caixaPesquisa:hover > #pesquisaTexto{
+    width: 240px;
+    padding: 0 6px;
+}
+
+.caixaPesquisa:hover > .botao{
+    background: #E4C59E;
+}
+
+::-webkit-input-placeholder{
+    color:#E4C59E;
 }

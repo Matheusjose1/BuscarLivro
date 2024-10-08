@@ -10,7 +10,7 @@ formPesquisa.onsubmit = (ev) => {
         alert('preencha o campo!');
         return;
     }
-    fetch(`https://www.googleapis.com/books/v1/volumes?q=${pesquisa}&key=${apiKey}`)
+    fetch(`https://www.googleapis.com/books/v1/volumes?q=${pesquisa}&key=${apiKey}&maxResults=40`)
         .then(result => result.json())
         .then (json=>carregaLista(json));
 }
